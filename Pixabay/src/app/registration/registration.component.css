@@ -1,24 +1,30 @@
+.registration{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .pixabay-form {
-    background-color: #242424;
-    padding: 20px;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
   }
   
   .pixabay-form label {
     color: #ffffff;
-    margin-bottom: 5px;
-    margin-right: 20px;
   }
   
   .pixabay-form input[type="text"],
   .pixabay-form input[type="password"] {
     width: 40%;
-    padding: 10px;
-    margin-bottom: 10px;
     border-radius: 3px;
-    border: 1px solid #ffffff;
-    background-color: #333333;
-    color: #ffffff;
+    border: 1px solid #000000;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    height: 25px;
+    margin-bottom: 10px;
+    width: 50vh;
   }
   
   .pixabay-form button[type="submit"] {
@@ -28,6 +34,7 @@
     background-color: #ffffff;
     color: #242424;
     cursor: pointer;
+    border: 1px solid #000000;
   }
   
   .pixabay-form button[type="submit"]:hover {

@@ -1,15 +1,15 @@
-<form (ngSubmit)="registerUser()" #registrationForm="ngForm" class="pixabay-form">
-  <div>
-    <label for="username">Ім'я користувача:</label>
-    <input type="text" id="username" name="username" [(ngModel)]="user.username" required>
-  </div>
-  <div>
-    <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
-  </div>
-  <div>
-    <label for="password">Token:</label>
-    <input type="password" id="token" name="token" [(ngModel)]="user.token" required>
-  </div>
-  <button type="submit">Зареєструватись</button>
-</form>
+<div class="registration">
+  <form (ngSubmit)="registerUser()" #registrationForm="ngForm" class="pixabay-form" style="display: flex; align-items: center; flex-direction: column;">
+    <div style="display: flex; flex-direction: column;">
+      <input type="text" placeholder="Username" id="username" name="username" [(ngModel)]="user.username" required>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <input type="password" placeholder="Password" id="password" name="password" [(ngModel)]="user.password" required>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <input type="password" placeholder="Token" id="token" name="token" [(ngModel)]="user.token" required>
+    </div>
+    <button type="submit" style="width: 30%;">Register</button>
+  </form>
+</div>
+
