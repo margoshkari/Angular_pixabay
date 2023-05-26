@@ -31,7 +31,7 @@ export class HomeComponent {
     }
 
     // Take the first 6 images
-    this.imagesArray = images.slice(0, 6);
+    this.imagesArray = images.slice(0,12);
     this.loading = false;
   }
 }

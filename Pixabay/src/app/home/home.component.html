@@ -8,7 +8,7 @@
     <button class="register-button" routerLink="/registration">Register</button>
     <div class="pixabay_photos">
       <div *ngIf="loading; else images" style="width: 100%; text-align: center;">
-        <p style="font-size: 30px;">Please register to view images</p>
+        <p style="font-size: 30px;">Loading...</p>
       </div>
       <ng-template #images>
         <div *ngFor="let item of imagesArray">
