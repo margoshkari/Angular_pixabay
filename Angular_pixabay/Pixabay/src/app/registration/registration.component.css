@@ -1,0 +1,36 @@
+.pixabay-form {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .pixabay-form label {
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-right: 20px;
+  }
+  
+  .pixabay-form input[type="text"],
+  .pixabay-form input[type="password"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .pixabay-form button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: #ffffff;
+    color: #242424;
+    cursor: pointer;
+  }
+  
+  .pixabay-form button[type="submit"]:hover {
+    background-color: #dddddd;
+  }
+  

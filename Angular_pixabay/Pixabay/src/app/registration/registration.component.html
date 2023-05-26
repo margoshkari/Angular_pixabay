@@ -1,0 +1,15 @@
+<form (ngSubmit)="registerUser()" #registrationForm="ngForm" class="pixabay-form">
+  <div>
+    <label for="username">Ім'я користувача:</label>
+    <input type="text" id="username" name="username" [(ngModel)]="user.username" required>
+  </div>
+  <div>
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+  </div>
+  <div>
+    <label for="password">Token:</label>
+    <input type="password" id="token" name="token" [(ngModel)]="user.token" required>
+  </div>
+  <button type="submit">Зареєструватись</button>
+</form>

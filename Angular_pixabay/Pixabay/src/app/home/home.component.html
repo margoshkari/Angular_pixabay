@@ -1,0 +1,19 @@
+<div class="pixabay">
+    <div class="button-container">
+      <button name="motorcycles" class="category-button" (click)="SwapImages('motorcycles')">Мотоцикли</button>
+      <button name="nature" class="category-button" (click)="SwapImages('nature')">Природа</button>
+      <button name="space" class="category-button" (click)="SwapImages('space')">Космос</button>
+      <button name="architecture" class="category-button" (click)="SwapImages('architecture')">Архітектура</button>
+    </div>
+    <button class="register-button" routerLink="/registration">Register</button>
+    <div class="pixabay_photos">
+      <div *ngIf="loading; else images">
+        <p>Loading...</p>
+      </div>
+      <ng-template #images>
+        <div *ngFor="let item of imagesArray">
+          <img class="images" src={{item.largeImageURL}}>
+        </div>
+      </ng-template>
+    </div>  
+  </div>
